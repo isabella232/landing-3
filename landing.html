@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Application mobile Pharminfo</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="landing.css" />
+  </head>
+  <body>
+    <header>
+      <a href="https://www.pharminfo.fr/"><img src="images/logo-pharminfo.png" /></a>
+      <ul class="social-networks">
+        <li><a href="https://www.facebook.com/pharminfo.fr?fref=ts"><img src="images/facebook.png"/></a></li>
+        <li><a href="https://twitter.com/pharminfofr"><img src="images/twitter.png"/></a></li>
+        <li><a href="https://plus.google.com/+PharminfoFr/posts"><img src="images/googleplus.png"/></a></li>
+        <li><a href="https://www.linkedin.com/company/pharminfo?trk=biz-companies-cym"><img src="images/linkedin.png"/></a></li>
+        <li><a href="https://fr.pinterest.com/pharminfo/"><img src="images/pinterest.png"/></a></li>
+      </ul>
+    </header>
+    <article id="presentation">
+      <div>
+        <h2>Application mobile Pharminfo</h2>
+        <h3>Envoyer votre ordonnance à la pharmacie de votre choix avec l'application mobile Pharminfo</h3>
+        <p>Simple d'utilisation, votre ordonnance est envoyée en quelques clics à votre pharmacien.</p>
+        <a id="download" href="https://play.google.com/store/apps/details?id=fr.kozea.pharminfo&hl=fr">Télécharger</a>
+        <a id="google" href="https://play.google.com/store"><img src="images/Google_Play.png"></a>
+      </div>
+    </article>
+    <article id="service">
+      <p class="videotext">Plus qu'une application mobile, un vrai service de proximité.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gSMbDIji5Rg" frameborder="0" allowfullscreen></iframe>
+      <h2>Les services</h2>
+      <p id="intro">Découvrez les différentes fonctionnalités de l'application mobile Pharminfo</p>
+      <section class="hidden">
+        <div class="left">
+          <div id="selection" data-id="0">
+            <h3>Sélectionnez la photo de votre ordonnance</h3>
+            <p>Le patient prend une photo de son ordonnance avec son téléphone.</p>
+          </div>
+          <div id="pharma" data-id="1">
+            <h3>Choisissez votre pharmacie</h3>
+            <p>Toutes nos pharmacies partenaires utilisant ce service sont référencées.</p>
+          </div>
+          <div id="ordo" data-id="2">
+            <h3>Archivage des ordonnances</h3>
+            <p>Les ordonnances envoyées sont automatiquement archivées.</p>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="slick">
+            <img src="images/accueil.png"/>
+            <img src="images/pharma.png"/>
+            <img src="images/archive.png"/>
+            <img src="images/localisation-screen.png"/>
+            <img src="images/favori-screen.png"/>
+            <img src="images/comment.png"/>
+          </div>
+        </div>
+        <div class="right">
+          <div id="localisation" data-id="3">
+            <h3>Géolocalisation</h3>
+            <p>Pour trouver la pharmacie la plus proche de chez vous.</p>
+          </div>
+          <div id="favori" data-id="4">
+            <h3>Pharmacie favorites</h3>
+            <p>Sélectionnez la pharmacie que vous préférez.</p>
+          </div>
+          <div id="comment" data-id="5">
+            <h3>Ajout d'un commentaire</h3>
+            <p>Précisez des informations essentielles à votre pharmacien.</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!--<article id="opinions">
+      <div id="user-opinions" class="slick">
+        <div class="user-opinion">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+      illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+      explicabo.</p>
+          <p>CléClé</p>
+        </div>
+        <div class="user-opinion">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna alique. Ut enim ad
+      minim veniam, qui nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat.</p>
+          <p>FloFlo</p>
+        </div>
+        <div class="user-opinion">
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est labotum.</p>
+          <p>PoPo</p>
+        </div>
+      </div>
+      <div id="news-opinions" class="slick">
+        <div class="new-opinion">
+          <p>C'est au top !</p>
+          <p>Le point</p>
+        </div>
+        <div class="new-opinion">
+          <p>Chantmé !</p>
+          <p>Le Nouvel Obs</p>
+        </div>
+        <div class="new-opinion">
+          <p>J'kiff</p>
+          <p>Les Inrocks</p>
+        </div>
+      </div>
+    </article>-->
+
+    <article id="contact">
+      <h2>Contact</h2>
+      <div class="hidden">
+        <div>
+          <h3>Hotline</h3>
+          <p>+33 0 820 90 10 26</p>
+        </div>
+        <div>
+          <h3>Fax</h3>
+          <p>04 27 11 83 98</p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>contact@pharminfo.fr</p>
+        </div>
+        <p class="adress">
+          Pharminfo.fr - Kozea<br>
+          1 rue Louis et Marie-Louise Baumer<br>
+          69120 Vaulx-en-Velin - France
+        </p>
+        <a class="press" href="images/presse.pdf"> Kit de presse</a>
+      </div>
+    </article>
+    <footer>
+      <a href="https://www.pharminfo.fr/"><img src="images/logo-pharminfo-footer.png"/></a>
+      <p>Pharminfo.fr crée et héberge de sites Internet pour les pharmacie d'officine.</p>
+      <p>Notre rôle est d'accompagner et d'éduquer le pharmacien à la mise en
+      place de ces nouveaux services ainsi qu'à l'utilisation de ce nouveau
+      canal de communication.</p>
+      <p>© 2015 Pharminfo.fr. Tous droits réservés. Pharminfo.fr est un marque de KOZEA.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $(window).scroll( function(){
+          var phone_top = $('#service').offset().top;
+          var window_top = $(window).scrollTop() + $(window).height();
+          if(phone_top <= window_top){
+            $('#service .hidden').animate({'opacity': '1'}, 1500);
+          }
+          var contact_top = $('#contact').offset().top;
+          if(contact_top <= window_top){
+            $('#contact .hidden').animate({'opacity': '1'}, 1500);
+          }
+        });
+        $('#user-opinions').slick({dots: true, autoplay: true});
+        $('#news-opinions').slick({dots: false, autoplay: true});
+        $('.slick').slick({dots: false, arrows: false});
+        $('.left div, .right div').on('mouseenter', function(){
+          $('.slick').slick('getSlick').slickGoTo($(this).attr('data-id'));
+        });
+      });
+    </script>
+
+  </body>
+</html>
