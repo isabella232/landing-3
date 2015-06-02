@@ -133,7 +133,7 @@
           1 rue Louis et Marie-Louise Baumer<br>
           69120 Vaulx-en-Velin - France
         </p>
-        <a class="press" href="images/presse.pdf"> Kit de presse</a>
+        <a id="press" class="press" href="images/presse.pdf"> Kit de presse</a>
       </div>
     </article>
     <footer>
@@ -167,6 +167,11 @@
         $('.left div, .right div').on('mouseenter', function(){
           $('.slick').slick('getSlick').slickGoTo($(this).attr('data-id'));
         });
+      });
+    </script>
+    <script type="text/javascript">
+      $('#press').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'press');
       });
     </script>
 
