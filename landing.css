@@ -113,22 +113,8 @@ header {
   width: 150px;
 }
 
-#presentation #download {
-  background: #03a77c;
-  color: #fff;
-  font-size: 13pt;
-  font-weight: 600;
-  margin-right: 10px;
-  padding: 12px 25px;
-  text-decoration: none;
-}
-
-#presentation #download:hover {
-  background: #008A63;
-}
-
 #presentation #google img {
-  vertical-align: middle;
+  margin-right: 10px;
 }
 
 
