@@ -14,6 +14,44 @@
       ga('create', 'UA-62616971-3', 'auto');
       ga('send', 'pageview');
     </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script type="text/javascript">
+      function show_service() {
+  var phone_top = $('#service').offset().top;
+      var window_top = $(window).scrollTop() + $(window).height();
+  if (phone_top <= window_top){
+    $('#service .hidden').animate({'opacity': '1'}, 1500);
+  }
+}
+ function show_contact() {
+  var window_top = $(window).scrollTop() + $(window).height();
+  var contact_top = $('#contact').offset().top;
+  if(contact_top <= window_top){
+    $('#contact .hidden').animate({'opacity': '1'}, 1500);
+  }
+}
+$(document).ready(function() {
+                    $(window).scroll( function(){
+                    console.log('in');
+    show_service();
+    show_contact();
+  });
+  $('#user-opinions').slick({dots: true, autoplay: true});
+  $('#news-opinions').slick({dots: false, autoplay: true});
+  $('.slick').slick({dots: false, arrows: false});
+  $('.left div, .right div').on('mouseenter', function(){
+    $('.slick').slick('getSlick').slickGoTo($(this).attr('data-id'));
+  });
+});
+    </script>
+    <script type="text/javascript">
+      $('#press').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'press');
+      });
+    </script>
+
   </head>
   <body>
     <header>
@@ -81,7 +119,7 @@
         </div>
       </section>
     </article>
-
+pp
     <!--<article id="opinions">
       <div id="user-opinions" class="slick">
         <div class="user-opinion">
@@ -153,35 +191,6 @@
       <p>© 2015 Pharminfo.fr. Tous droits réservés. Pharminfo.fr est un marque de KOZEA.</p>
     </footer>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        $(window).scroll( function(){
-          var phone_top = $('#service').offset().top;
-          var window_top = $(window).scrollTop() + $(window).height();
-          if(phone_top <= window_top){
-            $('#service .hidden').animate({'opacity': '1'}, 1500);
-          }
-          var contact_top = $('#contact').offset().top;
-          if(contact_top <= window_top){
-            $('#contact .hidden').animate({'opacity': '1'}, 1500);
-          }
-        });
-        $('#user-opinions').slick({dots: true, autoplay: true});
-        $('#news-opinions').slick({dots: false, autoplay: true});
-        $('.slick').slick({dots: false, arrows: false});
-        $('.left div, .right div').on('mouseenter', function(){
-          $('.slick').slick('getSlick').slickGoTo($(this).attr('data-id'));
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      $('#press').on('click', function() {
-        ga('send', 'event', 'button', 'click', 'press');
-      });
-    </script>
 
   </body>
 </html>
