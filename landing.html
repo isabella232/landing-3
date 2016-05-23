@@ -22,6 +22,7 @@
   var phone_top = $('#service').offset().top;
       var window_top = $(window).scrollTop() + $(window).height();
   if (phone_top <= window_top){
+    console.log('OK?')
     $('#service .hidden-element').animate({'opacity': '1'}, 1500);
   }
 }
@@ -43,8 +44,11 @@ $(window).load(function(){
   $('#news-opinions').slick({dots: false, autoplay: true});
   $('.slick').slick({dots: true, arrows: false, waitForAnimate: false});
   $('.left div, .right div').on('mouseenter', function(){
-    $('.slick').slick('slickGoTo', $(this).attr('data-id'));
+  $('.slick').slick('slickGoTo', $(this).attr('data-id'));
   });
+  show_service();
+  show_contact();
+
 });
                     </script>
     <script type="text/javascript">
