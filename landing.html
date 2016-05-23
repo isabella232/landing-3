@@ -39,9 +39,9 @@ $(document).ready(function() {
   });
   $('#user-opinions').slick({dots: true, autoplay: true});
   $('#news-opinions').slick({dots: false, autoplay: true});
-  $('.slick').slick({dots: false, arrows: false});
+  $('.slick').slick({dots: true, arrows: false, waitForAnimate: false});
   $('.left div, .right div').on('mouseenter', function(){
-    $('.slick').slick('getSlick').slickGoTo($(this).attr('data-id'));
+    $('.slick').slick('slickGoTo', $(this).attr('data-id'));
   });
 });
     </script>
