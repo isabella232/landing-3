@@ -37,6 +37,8 @@ $(document).ready(function() {
     show_service();
     show_contact();
   });
+});
+$(window).load(function(){
   $('#user-opinions').slick({dots: true, autoplay: true});
   $('#news-opinions').slick({dots: false, autoplay: true});
   $('.slick').slick({dots: true, arrows: false, waitForAnimate: false});
@@ -44,7 +46,7 @@ $(document).ready(function() {
     $('.slick').slick('slickGoTo', $(this).attr('data-id'));
   });
 });
-    </script>
+                    </script>
     <script type="text/javascript">
       $('#press').on('click', function() {
         ga('send', 'event', 'button', 'click', 'press');
