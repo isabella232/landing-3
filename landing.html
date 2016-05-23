@@ -22,14 +22,14 @@
   var phone_top = $('#service').offset().top;
       var window_top = $(window).scrollTop() + $(window).height();
   if (phone_top <= window_top){
-    $('#service .hidden').animate({'opacity': '1'}, 1500);
+    $('#service .hidden-element').animate({'opacity': '1'}, 1500);
   }
 }
  function show_contact() {
   var window_top = $(window).scrollTop() + $(window).height();
   var contact_top = $('#contact').offset().top;
   if(contact_top <= window_top){
-    $('#contact .hidden').animate({'opacity': '1'}, 1500);
+    $('#contact .hidden-element').animate({'opacity': '1'}, 1500);
   }
 }
 $(document).ready(function() {
@@ -79,7 +79,7 @@ $(window).load(function(){
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EsWFDDmA9p4" frameborder="0" allowfullscreen></iframe>
       <h2>Les services</h2>
       <p id="intro">Découvrez les différentes fonctionnalités de l'application mobile Pharminfo</p>
-      <section class="hidden">
+      <section class="hidden-element">
         <div class="left">
           <div id="selection" data-id="0">
             <h3>Sélectionnez la photo de votre ordonnance</h3>
@@ -161,7 +161,7 @@ $(window).load(function(){
 
     <article id="contact">
       <h2>Contact</h2>
-      <div class="hidden">
+      <div class="hidden-element">
         <div>
           <h3>Hotline</h3>
           <p>04 27 11 83 96</p>
